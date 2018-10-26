@@ -1,0 +1,17 @@
+{
+  "name": "castle-cli",
+  "version": "1.0.0",
+  "description": "Let's you open stuff in castle from the command line. A prototype to help decide if this is a good approach.",
+  "main": "index.js",
+  "repository": "https://github.com/expo/castle-cli.git",
+  "author": "Charlie Cheever <ccheever@expo.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "project-repl": "^1.5.0"
+  },
+  "dependencies": {
+    "file-url": "^2.0.2",
+    "minimist": "^1.2.0",
+    "opn": "^5.4.0"
+  }
+}
