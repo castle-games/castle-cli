@@ -1,20 +1,23 @@
+#!/usr/bin/env node
+
 let fileUrl = require('file-url');
 let minimist = require('minimist');
+let path = require('path');
 let opn = require('opn');
 
 let argv = minimist(process.argv.slice(2));
 
 async function openAsync(p) {
-  let url = fileUrl(p);
-  return await opn(url, {app: ['Castle', '--incognito']});
-} 
+  let url = fileUrl(path.join(process.cwd(), p));
+  return opn(url, { app: ['Castle', '--incognito'] });
+}
 
 module.exports = {
   openAsync,
 };
 
 if (require.main === module) {
-  openAsync(argv[0] || '.')
+  openAsync(argv._[0] || '.')
     .then(() => {
       // done
     })

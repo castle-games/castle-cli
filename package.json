@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Let's you open stuff in castle from the command line. A prototype to help decide if this is a good approach.",
   "main": "index.js",
+  "bin": {
+    "castle": "./index.js",
+    "castle-cli": "./index.js"
+  },
   "repository": "https://github.com/expo/castle-cli.git",
   "author": "Charlie Cheever <ccheever@expo.io>",
   "license": "MIT",
