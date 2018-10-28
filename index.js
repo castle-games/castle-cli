@@ -15,7 +15,7 @@ async function openAsync(p) {
   } else {
     url = fileUrl(path.join(process.cwd(), p));
   }
-  return opn(url, { app: ['Castle', '--incognito'] });
+  return opn(url, { app: ['Castle'], wait: false });
 }
 
 module.exports = {
