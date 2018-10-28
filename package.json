@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": {
     "castle": "./index.js",
-    "castle-cli": "./index.js"
+    "playcastle-cli": "./index.js"
   },
   "repository": "https://github.com/expo/castle-cli.git",
   "author": "Charlie Cheever <ccheever@expo.io>",
